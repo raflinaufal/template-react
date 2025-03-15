@@ -1,6 +1,5 @@
 {
   "name": "mofi",
-  "homepage": "https://react.pixelstrap.net/mofi",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

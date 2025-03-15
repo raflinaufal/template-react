@@ -9,19 +9,17 @@ const RouterData = () => {
   return (
     <BrowserRouter basename={"/"}>
       <Routes>
-      {login ? (
+        {login ? (
           <>
             <Route
-              path={`${process.env.PUBLIC_URL}` || '/'}
-              element={
-                <Navigate to={`${process.env.PUBLIC_URL}/dashboard/default`} />
-              }
+              path={`${process.env.PUBLIC_URL}` || "/"}
+              element={<Navigate to={`${process.env.PUBLIC_URL}/dashboard/`} />}
             />
           </>
         ) : (
           ""
         )}
-        <Route path={"/"} element={<PrivateRoute />}> 
+        <Route path={"/"} element={<PrivateRoute />}>
           <Route path={`/*`} element={<LayoutRoutes />} />
         </Route>
         {authRoutes.map(({ path, Component }, i) => (

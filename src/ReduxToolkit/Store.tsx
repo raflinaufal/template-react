@@ -18,28 +18,30 @@ import AddProductSlice from "./Reducers/AddProductSlice";
 import ThemeCustomizerSlice from "./Reducers/ThemeCustomizerSlice";
 import LetterBoxSlice from "./Reducers/LetterBoxSlice";
 import BookmarkHeaderSlice from "./Reducers/BookmarkHeaderSlice";
+import AuthSlice from "./Reducers/AuthSlice"; // Import AuthSlice
 
 const Store = configureStore({
   reducer: {
     layout: LayoutSlice,
     twoFactor: TwoFactorSlice,
-    formWizardTwo:FormWizardTwoSlice,
+    formWizardTwo: FormWizardTwoSlice,
     numberingWizard: NumberingWizardSlice,
     studentWizard: StudentWizardSlice,
     verticalWizard: VerticalWizardSlice,
-    product:ProductSlice,
-    chat:ChatSlice,
-    contact:ContactSlice,
-    tasks:TasksSlice,
-    bookmarkTab:BookmarkTabSlice,
+    product: ProductSlice,
+    chat: ChatSlice,
+    contact: ContactSlice,
+    tasks: TasksSlice,
+    bookmarkTab: BookmarkTabSlice,
     filterData: FilterSlice,
     cartData: CartSlice,
-    todo:ToDoSlice,
-    project:ProjectSlice,
-    addProduct:AddProductSlice,
+    todo: ToDoSlice,
+    project: ProjectSlice,
+    addProduct: AddProductSlice,
     themeCustomizer: ThemeCustomizerSlice,
-    letterBox:LetterBoxSlice,
-    bookmarkHeader:BookmarkHeaderSlice,
+    letterBox: LetterBoxSlice,
+    bookmarkHeader: BookmarkHeaderSlice,
+    auth: AuthSlice, // Add AuthSlice to the store
   },
 });
 
